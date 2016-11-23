@@ -1,0 +1,97 @@
+/*
+ * Base JaCaMo team for MAPC 2015
+ * 
+ * https://multiagentcontest.org
+ * 
+ * The coordination of this team is hard coded to produce material3.
+ *  
+ * Material 3 requires:
+ *    - 2 material1: drone is responsible
+ *    - 1 base3: truck is responsible
+ *    - 2 base2: motorcycle is responsible
+ *    - tool1: drone
+ *    - tool2: car
+ *    - tool3: motorcycle
+ */ 
+
+mas scenario1 {
+
+	agent vehicle1: vehicle.asl {
+		goals: register_EIS("connectionA1")
+	}
+	agent vehicle2: vehicle.asl {
+		goals: register_EIS("connectionA2")
+	}
+	agent vehicle3: vehicle.asl {
+		goals: register_EIS("connectionA3")
+	}
+	agent vehicle4: vehicle.asl {
+		goals: register_EIS("connectionA4")
+	}	
+	agent vehicle5: vehicle.asl {
+		goals: register_EIS("connectionA5")
+	}
+	agent vehicle6: vehicle.asl {
+		goals: register_EIS("connectionA6")
+	}
+	agent vehicle7: vehicle.asl {
+		goals: register_EIS("connectionA7")
+	}
+	agent vehicle8: vehicle.asl {
+		goals: register_EIS("connectionA8")
+	}		
+	agent vehicle9: vehicle.asl {
+		goals: register_EIS("connectionA9")
+	}
+	agent vehicle10: vehicle.asl {
+		goals: register_EIS("connectionA10")
+	}
+	agent vehicle11: vehicle.asl {
+		goals: register_EIS("connectionA11")
+	}
+	agent vehicle12: vehicle.asl {
+		goals: register_EIS("connectionA12")
+	}	
+	agent vehicle13: vehicle.asl {
+		goals: register_EIS("connectionA13")
+	}
+	agent vehicle14: vehicle.asl {
+		goals: register_EIS("connectionA14")
+	}
+	agent vehicle15: vehicle.asl {
+		goals: register_EIS("connectionA15")
+	}
+	agent vehicle16: vehicle.asl {
+		goals: register_EIS("connectionA16")
+	}	
+	
+    organisation mapc_org: organization.xml {    // the organisational entity is hello_org from spec o1.xml
+    	group jacamo_team: team {      // instance group (jacamo_team) from spec team
+    		responsible-for: mapcplay  // that will be responsible for the execution of scheme hello_sch (defined below)
+    		players: vehicle1	car,      // the roles of the agents in this group
+    		         vehicle2	drone,
+    		         vehicle3	motorcycle,
+    		         vehicle4	truck,
+    		         vehicle5	car,
+    		         vehicle6	drone,
+    		         vehicle7	motorcycle,
+    		         vehicle8	truck,
+    		         vehicle9	car,
+    		         vehicle10	drone,
+    		         vehicle11	motorcycle,
+    		         vehicle12	truck,    		         
+    		         vehicle13	car,
+    		         vehicle14	drone,
+    		         vehicle15	motorcycle,
+    		         vehicle16	truck
+    		debug                      // starts the organisational inspector
+    	}
+    	scheme mapcplay: mapc_sch {      // instance scheme (hello_eng) from spec hello_sch
+    		debug
+    	}
+    }	
+	
+	asl-path: src/usp/mapc/g1/agt	
+	
+	
+}
