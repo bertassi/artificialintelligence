@@ -1,5 +1,9 @@
 # Source Code for MAPC 2016
 
+### About MAPC
+
+This code was intended to be used in the 2016's Multi Agent Programming Contest (MAPC). For more information, please check https://multiagentcontest.org/2016/.
+
 ### Tech
 
 This work uses a number of open source projects to work properly:
