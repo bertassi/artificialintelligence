@@ -17,10 +17,10 @@ This work uses a number of open source projects to work properly:
 ### Running
 
 Using Eclipse:  
-1. open src/util/StartServer.java and execute it  
-2. open src/util/StartTeams.java and execute it  
+1. Open src/util/StartServer.java and execute it  
+2. Open src/util/StartTeams.java and execute it  
 3. Select the StartServer console and press ENTER to start the simulation  
-4. open and run src/util/StartMonitor.java **(optional)**.
+4. Open and run src/util/StartMonitor.java **(optional)**.
 
 Using Ant (each command should be executed in a different terminal):  
 1. *ant server*  
